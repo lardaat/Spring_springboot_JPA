@@ -63,29 +63,29 @@ public class RESTController {
         return users;
     }
 
-   /* @DeleteMapping("users/{id}")
-    public ResponseEntity<String> deleteUserById(@PathVariable("id") Long id) {
-        try {
-            userService.deleteById(User.class, id);
-            return ResponseEntity.ok("User with id " + id + " deleted successfully");
-        } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body("Failed to delete user with id " + id);
-        }
-    }*/
-
-
-    //Как у Трегулова
-   /* @DeleteMapping("users/{id}")
-    public String deleteUserTregulov(@PathVariable("id") Long id) {
-
-        User user = userService.read(id);
-        if(user==null){
-            throw new NoSuchUserException("There is not user with ID = " + id + " in Database");
-        }
-
-        userService.deleteById(User.class, id);
-        return "User with ID = " + id + " was deleted";
-
-    }*/
+//    @DeleteMapping("users/{id}")
+//    public ResponseEntity<String> deleteUserById(@PathVariable("id") Long id) {
+//        try {
+//            userService.deleteById(User.class, id);
+//            return ResponseEntity.ok("User with id " + id + " deleted successfully");
+//        } catch (Exception e) {
+//            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+//                    .body("Failed to delete user with id " + id);
+//        }
+//    }
+//
+//
+//    //Как у Трегулова
+//    @DeleteMapping("users/{id}")
+//    public String deleteUserTregulov(@PathVariable("id") Long id) {
+//
+//        User user = userService.read(id);
+//        if(user==null){
+//            throw new NoSuchUserException("There is not user with ID = " + id + " in Database");
+//        }
+//
+//        userService.deleteById(User.class, id);
+//        return "User with ID = " + id + " was deleted";
+//
+//    }
 }
